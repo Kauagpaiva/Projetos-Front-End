@@ -5,7 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        #titulo{
+            color: #20F520;
+            text-align: center;
+        }
+
+        #subtitulo{
+            color: #1cca1c;
+            /*margin-left: 10%;*/
+            text-align: center;
+        }
+
+        fieldset{
+            border: 0;
+        }
+
+        body{
+            background-color: #170122;
+            color: beige;
+            justify-content: center;
+            font-size: 1em;
+        }
+
+        input, select, textarea, button{
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .grupo:before, .grupo::after{
+            display:table
+        }
+
+        .grupo:after{
+            clear:both
+        }
+
+        .campo{
+            margin-bottom: 1em;
+        }
+
+        .campo label {
+            margin-bottom: 0.2em;
+            display: block;
+        }
+
+        fieldset.grupo .campo {
+            float: left;
+            margin-right: 1em;
+        }
+
+        .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
+            padding: o.2em;
+            border: 1px solid #1cca1c;
+            box-shadow: 2px 2px 2px #1cca1c;
+            display:block;
+        }
+
+        .campo select option {
+            padding-right: 1em;
+        }
+
+        .campo input:focus, .campo select:focus, .campo textarea:focus{
+            background: #8bdb8b;
+        }
+
+        #check {
+            display: inline-block;
+        }
+
+        #caixa{
+            background-color: #49006B;
+            margin-left: 28%;
+            margin-right: 28%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            border-radius: 15px;
+        }
+
+        #conteudo{
+            /*margin-left: 8%;
+            margin-top: 2%;
+            margin-bottom: 2%;*/
+            padding: 2% 8%;
+            border-radius: 5px;
+        }
+
+        }
+
+        #experiencia{
+            padding: 0.5em 0.5em;
+        }
+    </style>
+    
 </head>
 
 <body>
